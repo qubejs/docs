@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="en" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-bguv2lll"> <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Glossary | Docs</title><link rel="canonical" href="https://docs.qubejs.com/concepts/glossary"/><link rel="sitemap" href="/sitemap-index.xml"/><link href="https://docs.qubejs.com/blog/rss.xml" rel="alternate" title="Blog" type="application/rss+xml"/><link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v5.4.3"/><meta name="generator" content="Starlight v0.30.6"/><meta property="og:title" content="Glossary"/><meta property="og:type" content="article"/><meta property="og:url" content="https://docs.qubejs.com/concepts/glossary"/><meta property="og:locale" content="en"/><meta property="og:description" content="Definition of various terms in the context of the Qubejs Framework"/><meta name="twitter:card" content="summary_large_image"/><meta name="description" content="Definition of various terms in the context of the Qubejs Framework"/><meta property="og:image"/><meta property="og:site_name" content="Docs for the Qubejs Framework"/><meta property="twitter:image"/> <meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.Dxc1fLpz.js"></script> <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-3THXBRT184"></script> <script>(function(){const id = "G-3THXBRT184";
+
+  window.dataLayer = window.dataLayer || []
+
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+
+  document.addEventListener('astro:page-load', () => {
+    gtag('js', new Date())
+
+    gtag('config', id)
+
+  }, { once: false })
+})();</script><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg> <svg aria-hidden="true" class="dark astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg> <svg aria-hidden="true" class="auto astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> </template><link rel="stylesheet" href="/_astro/Page.BdA4iLps.css">
+<link rel="stylesheet" href="/_astro/Authors.Bggnoihg.css">
+<link rel="stylesheet" href="/_astro/Code.Dbey7g8P.css">
+<style>.sl-steps{--bullet-size: calc(var(--sl-line-height) * 1rem);--bullet-margin: .375rem;list-style:none;counter-reset:steps-counter var(--sl-steps-start, 0);padding-inline-start:0}.sl-steps>li{counter-increment:steps-counter;position:relative;padding-inline-start:calc(var(--bullet-size) + 1rem);padding-bottom:1px;min-height:calc(var(--bullet-size) + var(--bullet-margin))}.sl-steps>li+li{margin-top:0}.sl-steps>li:before{content:counter(steps-counter);position:absolute;top:0;inset-inline-start:0;width:var(--bullet-size);height:var(--bullet-size);line-height:var(--bullet-size);font-size:var(--sl-text-xs);font-weight:600;text-align:center;color:var(--sl-color-white);background-color:var(--sl-color-gray-6);border-radius:99rem;box-shadow:inset 0 0 0 1px var(--sl-color-gray-5)}.sl-steps>li:after{--guide-width: 1px;content:"";position:absolute;top:calc(var(--bullet-size) + var(--bullet-margin));bottom:var(--bullet-margin);inset-inline-start:calc((var(--bullet-size) - var(--guide-width)) / 2);width:var(--guide-width);background-color:var(--sl-color-hairline-light)}.sl-steps>li>:first-child{--lh: calc(1em * var(--sl-line-height));--shift-y: calc(.5 * (var(--bullet-size) - var(--lh)));transform:translateY(var(--shift-y));margin-bottom:var(--shift-y)}.sl-steps>li>:first-child:where(h1,h2,h3,h4,h5,h6){--lh: calc(1em * var(--sl-line-height-headings))}@supports (--prop: 1lh){.sl-steps>li>:first-child{--lh: 1lh}}
+</style><script type="module" src="/_astro/page.DlXkxCA4.js"></script></head> <body class="astro-bguv2lll"> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-3THXBRT184" height="0" width="0" style="display:none;visibility:hidden">
+  </iframe></noscript><a href="#_top" class="astro-7q3lir66">Skip to content</a>  <div class="page sl-flex astro-vrdttmbt"> <header class="header astro-vrdttmbt"><div class="header sl-flex astro-kmkmnagf"> <div class="title-wrapper sl-flex astro-kmkmnagf"> <a href="/" class="site-title sl-flex astro-m46x6ez3">  <img class="light:sl-hidden astro-m46x6ez3" alt src="/_astro/logo-dark.ZagTfLuU.svg" width="243" height="104"> <img class="dark:sl-hidden astro-m46x6ez3" alt src="/_astro/logo-light.Dme3m0-9.svg" width="243" height="104"> <span class="astro-m46x6ez3" translate="no"> Docs </span> </a>  </div> <div class="sl-flex astro-kmkmnagf"> <site-search class="astro-kmkmnagf astro-v37mnknz" data-translations="{&#34;placeholder&#34;:&#34;Search&#34;}" data-strip-trailing-slash> <button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-v37mnknz"> <svg aria-hidden="true" class="astro-v37mnknz astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg>  <span class="sl-hidden md:sl-block astro-v37mnknz" aria-hidden="true">Search</span> <kbd class="sl-hidden md:sl-flex astro-v37mnknz" style="display: none;"> <kbd class="astro-v37mnknz">Ctrl</kbd><kbd class="astro-v37mnknz">K</kbd> </kbd> </button> <dialog style="padding:0" aria-label="Search" class="astro-v37mnknz"> <div class="dialog-frame sl-flex astro-v37mnknz">  <button data-close-modal class="sl-flex md:sl-hidden astro-v37mnknz"> Cancel </button> <div class="search-container astro-v37mnknz"> <div id="starlight__search" class="astro-v37mnknz"></div> </div> </div> </dialog> </site-search>  <script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script> <script type="module" src="/_astro/Search.astro_astro_type_script_index_0_lang.DUGuF8xP.js"></script>   </div> <div class="sl-hidden md:sl-flex right-group astro-kmkmnagf"> <div class="sl-flex social-icons astro-kmkmnagf"> <div class="border-r border-gray-300 dark:border-gray-700 pr-4"> <a href="https://qubejs.com" class="font-bold decoration-0 no-underline 
+     text-accent-600 dark:text-accent-200
+     px-2 py-0 
+     border border-gray-300 dark:border-gray-700
+     hover:border-accent-600 dark:hover:border-accent-200
+     rounded
+     inline-flex items-center" target="_blank" rel="noopener"> <span>qubejs.com</span> <svg width="1em" height="1em" data-icon="mdi:arrow-top-right">   <symbol id="ai:mdi:arrow-top-right" viewBox="0 0 24 24"><path fill="currentColor" d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></symbol><use href="#ai:mdi:arrow-top-right"></use>  </svg> </a> </div> <a href="https://github.com/qubejs/qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg> </a><a href="https://x.com/qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">X</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M 18.242188 2.25 L 21.554688 2.25 L 14.324219 10.507812 L 22.828125 21.75 L 16.171875 21.75 L 10.953125 14.933594 L 4.992188 21.75 L 1.679688 21.75 L 9.40625 12.914062 L 1.257812 2.25 L 8.082031 2.25 L 12.792969 8.480469 Z M 17.082031 19.773438 L 18.914062 19.773438 L 7.082031 4.125 L 5.113281 4.125 Z M 17.082031 19.773438 "/></svg> </a><a href="https://youtube.com/@qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">YouTube</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M23.5 6.2A3 3 0 0 0 21.4 4c-1.9-.5-9.4-.5-9.4-.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.3C0 8 0 12 0 12s0 4 .5 5.8A3 3 0 0 0 2.6 20c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2c.5-2 .5-5.9.5-5.9s0-4-.5-5.8zm-14 9.4V8.4l6.3 3.6-6.3 3.6z"/></svg> </a><a href="https://www.linkedin.com/navneetnaagpal" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">LinkedIn</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3v9ZM6.59 8.48a1.56 1.56 0 0 1 0-3.12 1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06v5.18Z"/></svg> </a><a href="https://docs.qubejs.com/blog/rss.xml" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">RSS</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M2.88 16.88a3 3 0 0 0 0 4.24 3 3 0 0 0 4.24 0 3 3 0 0 0-4.24-4.24Zm2.83 2.83a1 1 0 0 1-1.42-1.42 1 1 0 0 1 1.42 0 1 1 0 0 1 0 1.42ZM5 12a1 1 0 0 0 0 2 5 5 0 0 1 5 5 1 1 0 0 0 2 0 7 7 0 0 0-7-7Zm0-4a1 1 0 0 0 0 2 9 9 0 0 1 9 9 1 1 0 0 0 2 0 11.08 11.08 0 0 0-3.22-7.78A11.08 11.08 0 0 0 5 8Zm10.61.39A15.11 15.11 0 0 0 5 4a1 1 0 0 0 0 2 13 13 0 0 1 13 13 1 1 0 0 0 2 0 15.11 15.11 0 0 0-4.39-10.61Z"/></svg> </a> </div> <div class="astro-p2efsdyb"> <a href="/blog" class="astro-p2efsdyb">Blog</a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script> <script type="module">const r="starlight-theme",o=e=>e==="auto"||e==="dark"||e==="light"?e:"auto",c=()=>o(typeof localStorage<"u"&&localStorage.getItem(r));function n(e){typeof localStorage<"u"&&localStorage.setItem(r,e==="light"||e==="dark"?e:"")}const l=()=>matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";function t(e){StarlightThemeProvider.updatePickers(e),document.documentElement.dataset.theme=e==="auto"?l():e,n(e)}matchMedia("(prefers-color-scheme: light)").addEventListener("change",()=>{c()==="auto"&&t("auto")});class s extends HTMLElement{constructor(){super(),t(c()),this.querySelector("select")?.addEventListener("change",a=>{a.currentTarget instanceof HTMLSelectElement&&t(o(a.currentTarget.value))})}}customElements.define("starlight-theme-select",s);</script>  <script type="module">class s extends HTMLElement{constructor(){super();const e=this.querySelector("select");e&&(e.addEventListener("change",t=>{t.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=t.currentTarget.value)}),window.addEventListener("pageshow",t=>{if(!t.persisted)return;const n=e.querySelector("option[selected]")?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}}customElements.define("starlight-lang-select",s);</script> </div> </div> </header> <nav class="sidebar astro-vrdttmbt" aria-label="Main"> <starlight-menu-button class="astro-jif73yzw"> <button aria-expanded="false" aria-label="Menu" aria-controls="starlight__sidebar" class="sl-flex md:sl-hidden astro-jif73yzw"> <svg aria-hidden="true" class="astro-jif73yzw astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg>  </button> </starlight-menu-button> <script type="module">class s extends HTMLElement{constructor(){super(),this.btn=this.querySelector("button"),this.btn.addEventListener("click",()=>this.toggleExpanded());const t=this.closest("nav");t&&t.addEventListener("keyup",e=>this.closeOnEscape(e))}setExpanded(t){this.setAttribute("aria-expanded",String(t)),document.body.toggleAttribute("data-mobile-menu-expanded",t)}toggleExpanded(){this.setExpanded(this.getAttribute("aria-expanded")!=="true")}closeOnEscape(t){t.code==="Escape"&&(this.setExpanded(!1),this.btn.focus())}}customElements.define("starlight-menu-button",s);</script>   <div id="starlight__sidebar" class="sidebar-pane astro-vrdttmbt"> <div class="sidebar-content sl-flex astro-vrdttmbt"> <div class="md:sl-hidden astro-4f3f2ziw"><a href="/blog" class="astro-4f3f2ziw">Blog</a></div><sl-sidebar-state-persist data-hash="1uqdto4" class="astro-kku4brbg"> <script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script>  <ul class="top-level astro-3ii7xxms"> <li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="0"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Intro</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/intro" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Overview</span>  </a> </li> </ul>  </details> </li><li class="astro-3ii7xxms"> <details open class="astro-3ii7xxms"> <sl-sidebar-restore data-index="1"></sl-sidebar-restore> <summary class="astro-3ii7xxms"> <div class="group-label astro-3ii7xxms"> <span class="large astro-3ii7xxms">Concepts</span>  </div> <svg aria-hidden="true" class="caret astro-3ii7xxms astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </summary> <ul class="astro-3ii7xxms"> <li class="astro-3ii7xxms"> <a href="/concepts" aria-current="false" class="astro-3ii7xxms"> <span class="astro-3ii7xxms">Overview</span>  </a> </li> </ul>  </details> </li> </ul>   <script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="sl-flex social-icons astro-wu23bvmt"> <div class="border-r border-gray-300 dark:border-gray-700 pr-4"> <a href="https://qubejs.com" class="font-bold decoration-0 no-underline 
+     text-accent-600 dark:text-accent-200
+     px-2 py-0 
+     border border-gray-300 dark:border-gray-700
+     hover:border-accent-600 dark:hover:border-accent-200
+     rounded
+     inline-flex items-center" target="_blank" rel="noopener"> <span>qubejs.com</span> <svg width="1em" height="1em" viewBox="0 0 24 24" data-icon="mdi:arrow-top-right">   <use href="#ai:mdi:arrow-top-right"></use>  </svg> </a> </div> <a href="https://github.com/qubejs/qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg> </a><a href="https://x.com/qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">X</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M 18.242188 2.25 L 21.554688 2.25 L 14.324219 10.507812 L 22.828125 21.75 L 16.171875 21.75 L 10.953125 14.933594 L 4.992188 21.75 L 1.679688 21.75 L 9.40625 12.914062 L 1.257812 2.25 L 8.082031 2.25 L 12.792969 8.480469 Z M 17.082031 19.773438 L 18.914062 19.773438 L 7.082031 4.125 L 5.113281 4.125 Z M 17.082031 19.773438 "/></svg> </a><a href="https://youtube.com/@qubejs" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">YouTube</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M23.5 6.2A3 3 0 0 0 21.4 4c-1.9-.5-9.4-.5-9.4-.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.3C0 8 0 12 0 12s0 4 .5 5.8A3 3 0 0 0 2.6 20c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2c.5-2 .5-5.9.5-5.9s0-4-.5-5.8zm-14 9.4V8.4l6.3 3.6-6.3 3.6z"/></svg> </a><a href="https://www.linkedin.com/navneetnaagpal" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">LinkedIn</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3v9ZM6.59 8.48a1.56 1.56 0 0 1 0-3.12 1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06v5.18Z"/></svg> </a><a href="https://docs.qubejs.com/blog/rss.xml" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">RSS</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M2.88 16.88a3 3 0 0 0 0 4.24 3 3 0 0 0 4.24 0 3 3 0 0 0-4.24-4.24Zm2.83 2.83a1 1 0 0 1-1.42-1.42 1 1 0 0 1 1.42 0 1 1 0 0 1 0 1.42ZM5 12a1 1 0 0 0 0 2 5 5 0 0 1 5 5 1 1 0 0 0 2 0 7 7 0 0 0-7-7Zm0-4a1 1 0 0 0 0 2 9 9 0 0 1 9 9 1 1 0 0 0 2 0 11.08 11.08 0 0 0-3.22-7.78A11.08 11.08 0 0 0 5 8Zm10.61.39A15.11 15.11 0 0 0 5 4a1 1 0 0 0 0 2 13 13 0 0 1 13 13 1 1 0 0 0 2 0 15.11 15.11 0 0 0-4.39-10.61Z"/></svg> </a> </div> <div class="astro-p2efsdyb"> <a href="/blog" class="astro-p2efsdyb">Blog</a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg>  <select value="auto" autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg>  </label>  </starlight-theme-select>  <script>
+	StarlightThemeProvider.updatePickers();
+</script>    </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <div class="lg:sl-hidden astro-qqohcwm7"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><div class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg> </div><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#descriptor" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Descriptor</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#builder" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Builder</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#feature" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Feature</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#modules--packages" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Modules &amp; Packages</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#plugin" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Plugin</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#schema" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Schema</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#cms" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">CMS</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#studio" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Studio</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#content-item" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Content Item</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#condition" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Condition</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#route" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Route</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#conditional-route" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Conditional Route</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#action" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Action</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#events" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Events</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#layout" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Layout</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#modifier" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Modifier </span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#feature-registry" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Feature Registry</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#platform" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Platform</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc><script type="module" src="/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-qqohcwm7"><div class="sl-container astro-qqohcwm7"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#descriptor" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Descriptor</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#builder" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Builder</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#feature" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Feature</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#modules--packages" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Modules &amp; Packages</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#plugin" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Plugin</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#schema" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Schema</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#cms" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">CMS</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#studio" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Studio</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#content-item" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Content Item</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#condition" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Condition</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#route" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Route</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#conditional-route" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Conditional Route</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#action" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Action</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#events" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Events</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#layout" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Layout</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#modifier" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Modifier </span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#feature-registry" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Feature Registry</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#platform" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Platform</span> </a>  </li> </ul> </nav></starlight-toc><script type="module" src="/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script></div><div class="sl-container astro-qqohcwm7"><aside class="not-content astro-ibctbwho"> <a href="https://qubejs.com" class="astro-ibctbwho"> <h2 class="astro-ibctbwho">Qubejs</h2> <div class="astro-ibctbwho"> <div class="astro-ibctbwho"> <p class="astro-ibctbwho"> Build Modular, Scalable Flutter Apps. </p> </div> <div class="astro-ibctbwho"> <img src="/_astro/logo.CoaPzhB6_Fthdb.svg" alt width="180" height="203" loading="lazy" decoding="async" class="astro-ibctbwho"> </div> </div> </a> </aside> </div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Glossary</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <h2 id="descriptor">Descriptor</h2>
+<p>A way to describe a modular piece of content or functionality. Descriptors are
+used to define a feature and its exported content types. They are also used to
+describe other aspect of the framework such as custom content, layouts,
+extensions, etc.</p>
+<p>On the CMS side, descriptors are used to describe various content types and
+configurations that can be used on the CMS Studio.</p>
+<p>Some of the common descriptor types you will encounter include the
+<code dir="auto">FeatureDescriptor</code>, <code dir="auto">ContentDescriptor</code>, <code dir="auto">APIContentDescriptor</code>, etc.</p>
+<h2 id="builder">Builder</h2>
+<p>Builders are used to collect a set of related descriptors and build a feature or
+content. On the CMS side, builders assemble and create the schema for a single
+content-type. They collect all the related descriptors and use them to build the
+final schema.</p>
+<p>On the Flutter side, builders collect all the related descriptors, build a
+type-registry and help in rendering the content at runtime.</p>
+<h2 id="feature">Feature</h2>
+<p>Describes a single feature that is a unit of functionality in the application.
+Features are usually user-facing and include elements such as content types,
+routes, layouts, actions, and conditions. A feature also has metadata about its
+name, icon, title, and description.</p>
+<p>The ability to describe a feature in a modular manner is what makes <em>Qubejs</em>
+unique.</p>
+<p>One super-power of a Feature is that it is <em>transferable</em> across any
+Qubejs-enabled Apps. This means you can literally drop a feature into an unrelated
+Qubejs App and have it work with minimal or no configuration changes. This allows
+Qubejs to build a <strong>family of Apps</strong> that share a bunch of features!</p>
+<aside aria-label="Note" class="starlight-aside starlight-aside--note"> <p class="starlight-aside__title" aria-hidden="true"> <svg aria-hidden="true" class="starlight-aside__icon astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 11a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm.38-3.92a1 1 0 0 0-.76 0 1 1 0 0 0-.33.21 1.15 1.15 0 0 0-.21.33 1 1 0 0 0 .21 1.09c.097.088.209.16.33.21A1 1 0 0 0 13 8a1.05 1.05 0 0 0-.29-.71 1 1 0 0 0-.33-.21ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16.001A8 8 0 0 1 12 20Z"/></svg> Note </p> <div class="starlight-aside__content"> <p><strong>Mini App</strong></p><p>Features are also referred as <strong>Mini Apps</strong> in the Qubejs’s parlance. When a
+feature encapsulates a significant functionality, rivaling that of an App, we
+tend to refer to it as a Mini App.</p><p>Think of a feature in a <em><strong>Banking App</strong></em> that takes care of handling
+<em>Investments</em> or <em>Loans</em> or doing a peer-to-peer <em>Payment</em>, like UPI. These are
+modular features that are sizable and encapsulate a fair amount of UX journeys
+and APIs. Such features qualify as <em><strong>Mini Apps</strong></em>.</p> </div> </aside>
+<h2 id="modules--packages">Modules &#x26; Packages</h2>
+<p>These are synonymous with Features. Qubejs encourages dividing your application
+into a set of modules or packages, each encapsulating a specific functionality.
+Each module can be developed and tested independently. When the module is ready,
+it can be plugged into the main app.</p>
+<h2 id="plugin">Plugin</h2>
+<p>Plugins are a way to provide cross-cutting functionality that can be used by any
+feature in the app.</p>
+<p>For example,</p>
+<ul>
+<li>The <code dir="auto">auth</code> plugin (accessible via <code dir="auto">vyuh.auth</code>) can be used for accessing
+authentication related APIs</li>
+<li>The <code dir="auto">network</code> plugin (accessible via <code dir="auto">vyuh.network</code>) can be used for making
+API requests such as <code dir="auto">get</code>, <code dir="auto">post</code> etc.</li>
+</ul>
+<aside aria-label="Note" class="starlight-aside starlight-aside--note"> <p class="starlight-aside__title" aria-hidden="true"> <svg aria-hidden="true" class="starlight-aside__icon astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 11a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm.38-3.92a1 1 0 0 0-.76 0 1 1 0 0 0-.33.21 1.15 1.15 0 0 0-.21.33 1 1 0 0 0 .21 1.09c.097.088.209.16.33.21A1 1 0 0 0 13 8a1.05 1.05 0 0 0-.29-.71 1 1 0 0 0-.33-.21ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16.001A8 8 0 0 1 12 20Z"/></svg> Note </p> <div class="starlight-aside__content"> <p>A Plugin in the context of Qubejs is just a pluggable API and should not be
+confused with
+<a href="https://docs.flutter.dev/packages-and-plugins/using-packages" rel="nofollow">plugin<span> 🔗</span></a> from
+the Flutter framework.</p> </div> </aside>
+<h2 id="schema">Schema</h2>
+<p>Schema defines the shape and structure of your content-item along with all of
+its typed-attributes. Schemas are pervasively used in Qubejs to define various
+elements such as actions, layouts, routes, and custom content-types.</p>
+<p>The Schema has a Dart counterpart in Flutter, which deserializes the content and
+renders on the screen.</p>
+<p>All of these elements are part of the <code dir="auto">FeatureDescriptor</code>, which describes the
+feature.</p>
+<h2 id="cms">CMS</h2>
+<p>CMS stands for Content Management System, more specifically a <strong>Headless</strong>
+content management system. It’s a way to manage (create/store/edit) structured
+content with a pre-defined schema.</p>
+<p>CMS itself is a plugin inside Qubejs and accessible via <code dir="auto">vyuh.content</code>. It is used
+to describe dynamic content with a known schema. Qubejs takes special advantage of
+headless CMS-es like <code dir="auto">Sanity</code> to make App development a very exploratory
+process. You can use the CMS to describe diverse content types such as an
+E-Commerce Product, a News Article or a Menu Item for a restaurant.</p>
+<p>Other aspects of an application such as routes, actions, conditions, etc. are
+also managed on the CMS.</p>
+<h2 id="studio">Studio</h2>
+<p>Refers to the Content editing experience offered by the headless CMS. This is
+usually where all the content gets created and managed. It might include a set
+of workflows for approval before publishing it live. Some studios allow greater
+customization, allowing developers to provide custom input controls for editing
+complex content types.</p>
+<h2 id="content-item">Content Item</h2>
+<p>Refers to an instance of a unique content-type such as a Product Card, Image,
+Text or even a collection such as a Carousel, List or Grid. There are standard
+content-items built into the framework such as Card, Group, Divider, Accordion,
+Portable Text, etc. However, the framework also allows creating custom Content
+Items that are specialized for the App.</p>
+<h2 id="condition">Condition</h2>
+<p>Conditions are runtime elements that evaluate to a boolean or some enumeration.
+They are used to control the flow of the application as well as the availability
+of certain elements.</p>
+<p>For example,</p>
+<ul>
+<li>A platform condition may only allow certain widgets on certain platforms.</li>
+<li>An app version condition may only allow certain paths on a specific app
+version or a range of app versions.</li>
+</ul>
+<p>Conditions are used for routing, visibility, layouts, actions, and other dynamic
+aspects of the app.</p>
+<h2 id="route">Route</h2>
+<p>A route represents an identifiable screen, dialog or page of the application.
+The <code dir="auto">path</code> attribute is used to uniquely identify a route. Route is possibly the
+most important content-type in a CMS driven Application.</p>
+<h2 id="conditional-route">Conditional Route</h2>
+<p>A special type of Route that includes a <em>condition</em> to allow runtime branching
+and switching between two or more Routes. Conditional routes are used to provide
+a fork in journey based on some condition. A classic example is to show a Login
+page or a Dashboard page depending on the authentication-state of the user. This
+can be done with a <code dir="auto">ConditionalRoute</code> pointing to a <em>Login Page</em> for the <code dir="auto">false</code>
+condition and the <em>Dashboard Page</em> for the <code dir="auto">true</code> condition of the
+user-authentication state.</p>
+<h2 id="action">Action</h2>
+<p>Actions specify what needs to be done after a certain event. For example,
+navigating to a page on clicking a card, or showing a success animation after
+checkout, etc.</p>
+<p>Qubejs has several built in actions such as Navigation, Script execution,
+Restarting, Changing themes, etc.</p>
+<p>You can add your own actions and make them relevant to your app.</p>
+<blockquote>
+<p>Like everything else in the <em>Qubejs Framework</em>, Action has counterparts on CMS
+and on the Flutter side.</p>
+</blockquote>
+<h2 id="events">Events</h2>
+<p>Events allow you to listen to lifecycle events that happen inside the framework.
+They can also be used by features to communicate with other features. The
+eventing system inside Qubejs acts like an event-bus where different features and
+plugins can communicate with each other with a type-safe event.</p>
+<h2 id="layout">Layout</h2>
+<p>Layouts describe the visual structure of a content-type. Every content type
+(standard or custom) must have a <em>default layout</em> and can also include multiple
+other layouts. They are particularly useful for routes, and content types like
+<code dir="auto">Card</code> or <code dir="auto">Group</code>. Whether a <code dir="auto">Group</code> should be shown as a <em>vertical list</em> or a
+<em>2-column grid</em> is controlled by the layout. Layouts can be switched for
+different platforms, screen sizes, or based on runtime conditions.</p>
+<h2 id="modifier">Modifier <sup><span class="sl-badge default small astro-avdet4wd">New</span> </sup></h2>
+<p>Modifiers are chainable visual behaviors that can be attached to any
+content-item. You can have one or more Modifiers for a Content Item and are
+applied in the same order as specified.</p>
+<p>The framework takes the output of the layout, which is a <code dir="auto">Widget</code> and feeds it
+to the first modifier in the chain. The end output after applying all modifiers
+is also a <code dir="auto">Widget</code>.</p>
+<h2 id="feature-registry">Feature Registry</h2>
+<p>Feature Registry is a store of all the features that are available in the app.
+As described earlier in the Feature section, it is an atomic, transferable piece
+of functionality.</p>
+<h2 id="platform">Platform</h2>
+<p>Platform is the deployment target for the app. It can be <code dir="auto">iOS</code>, <code dir="auto">android</code>, <code dir="auto">web</code>
+or any of the supported platforms of Flutter.</p>  </div>  <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n"> <a href="https://github.com/qubejs/website/docs/edit/main/src/content/docs/concepts/glossary.mdx" class="sl-flex astro-eez2twj6"><svg aria-hidden="true" class="astro-eez2twj6 astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg> Edit page</a> <p>Last updated: <time datetime="2025-03-12T08:53:00.000Z">Mar 12, 2025</time></p> </div> <div class="pagination-links astro-u2l5gyhi" dir="ltr">   </div>   </footer>  <footer class="mt-16 p-8 border-t border-gray-200 dark:border-gray-800 text-xs text-gray-500 flex flex-col gap-4 items-center"> <img src="/_astro/logo.CoaPzhB6_ZHbz97.svg" alt="Qubejs Technologies" width="20" height="20" loading="lazy" decoding="async"> <div>
+Copyright &copy; 2025, Qubejs Technologies Private Limited.
+</div> </footer> </div> </div>   </main> </div> </div>  </div> </div>  </body></html>
